@@ -9,8 +9,8 @@
 
     // In case it's not obvious: this is not the correct way to build web applications!
 
-    // Require the idiorm file
-    require_once("idiorm.php");
+    // Use ORM from Idiorm namespace
+    use Idiorm\ORM;
 
     // Connect to the demo database file
     ORM::configure('sqlite:./demo.sqlite');
